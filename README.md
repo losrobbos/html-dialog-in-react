@@ -1,17 +1,34 @@
 # Modal dialog in React using HTML dialog element
 
+This Demo shows how to handle the HTML dialog element as a modal in React functional components.
+
+Modal means:
+
+- show a dialog element ON TOP of all other content
+- the modal is automatically centered
+- the modal covers the entire screen, so the content below cannot be clicked anymore (by using a so called "backdrop", e.g. a shadow area which spans the entire viewport)
+
 ## Features
 
-- Close Dialog on Button click
+- Open HTML Dialog element as modal (covering whole screen)
+- Close Modal on Button click
 - Close Dialog on ESC key
 - Close Dialog when clicking OUTSIDE Dialog area
 
-## Approach
-
-This Demo uses functional components to show
-how to handle a modal in a very simple way.
+## Mini Guide - Modal in React
 
 To access the dialog element in React we place a "ref" on it.
+
+```
+  const refDialog = useRef();
+```
+
+And in JSX:
+```
+<dialog ref={refDialog} >
+   ... your dialog content here ...
+</dialog>
+```
 
 Now, when clicking buttons inside the dialog element,
 inside the click handler function we can access the dialog. Using the ref! And can close it.
