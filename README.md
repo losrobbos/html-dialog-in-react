@@ -8,6 +8,9 @@ Modal means:
 - the modal is automatically centered
 - the modal covers the entire screen, so the content below cannot be clicked anymore (by using a so called "backdrop", e.g. a shadow area which spans the entire viewport)
 
+Demo: https://dialog-modal.vercel.app
+
+
 ## Features
 
 - Open HTML Dialog element as modal (covering whole screen)
